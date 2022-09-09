@@ -42,7 +42,7 @@ public class CreacionNArchivo {
                     }
                 }
             }else{
-                JOptionPane.showMessageDialog(null, "El archivo no tiene la extensión csv");
+                JOptionPane.showMessageDialog(null, "El archivo no tiene la extensión txt");
             }
         }         
         
