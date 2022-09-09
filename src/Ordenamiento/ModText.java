@@ -1,3 +1,6 @@
+package Ordenamiento;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 //import static java.lang.System.*;
 //import java.util.Scanner;
@@ -41,6 +44,15 @@ public class ModText {
             
         }
         return new String(caracteres);
+    }
+
+    public static ArrayList<String> arreglarArray(ArrayList<String> cadenas){
+        ArrayList<String> normalizado = new ArrayList<>();
+        Iterator<String> iterador = cadenas.iterator();
+        while(iterador.hasNext()){
+            normalizado.add(arreglarCadena(iterador.next()));
+        }
+        return normalizado;
     }
     
 }
